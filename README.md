@@ -163,8 +163,6 @@ The 4.0% target is an illustrative pilot goal. A production baseline and feasibi
 | QA | Testable requirements | Validate acceptance criteria and execute tests |
 | Customers | Successful orders and clear status | Inform customer journey requirements |
 
-Detailed stakeholder analysis, discovery questions, and the RACI matrix are available in [Stakeholders and Discovery](docs/02-stakeholders-and-discovery.md).
-
 ---
 
 ## Business Analyst Responsibilities
@@ -215,7 +213,6 @@ Each of the four weekly cohorts contains 250 orders. Every order has a final out
 - Completed orders must have empty cancellation fields.
 - Stock driver labels must appear only on stock-related cancellations.
 
-See [Data Dictionary](data/data-dictionary.md) for definitions and assumptions.
 
 ---
 
@@ -223,7 +220,6 @@ See [Data Dictionary](data/data-dictionary.md) for definitions and assumptions.
 
 The dashboard summarizes cancellation rates, primary reasons, detection stages, stock-related drivers, and weekly stock cancellation rates.
 
-![E-commerce order cancellation analysis dashboard](assets/demo-analysis.png)
 
 ### Dashboard Metrics
 
@@ -312,7 +308,6 @@ The dataset contains 20 simulated concurrent oversell cases. Preventing all 20 w
 
 This hypothesis requires validation using stock ledger versions, order timestamps, and a concurrency reproduction.
 
-See [Root-Cause Analysis](docs/04-root-cause-analysis.md).
 
 ---
 
@@ -370,9 +365,6 @@ flowchart TD
 - Require structured cancellation reasons.
 - Keep suspected missing inventory unavailable until reviewed.
 - Make cancellation and refund status visible to the relevant teams.
-
-See [Process Maps](docs/03-process-maps.md).
-
 ---
 
 ## Solution Offerings
@@ -407,8 +399,6 @@ Low-stock reminders are a future enhancement after reliable inventory controls a
 | BR-03 | Make cancellations measurable and actionable |
 | BR-04 | Keep customers and operations informed about cancellation and refund status |
 
-See [Business Requirements Document](docs/05-business-requirements.md).
-
 ---
 
 ## Functional Requirements
@@ -432,8 +422,6 @@ See [Business Requirements Document](docs/05-business-requirements.md).
 - Stock suspected to be missing remains unavailable pending review.
 - Refund processing uses a retry key to prevent duplicate requests.
 - Seller inventory updates must account for existing commitments.
-
-See [Functional Specification](docs/06-functional-specification.md).
 
 ---
 
@@ -462,8 +450,6 @@ Performance thresholds require engineering feasibility review before commitment.
 | US-07 | As a seller, I want low-stock reminders | Could |
 
 The backlog includes acceptance criteria and dependencies for each story.
-
-See [Product Backlog](docs/07-product-backlog.md).
 
 ---
 
@@ -533,8 +519,6 @@ The UAT plan connects business requirements to functional requirements, user sto
 - Inventory and payment reconciliation evidence is attached.
 - Operations and product owners approve business readiness.
 
-See [UAT and Traceability](docs/08-uat-and-traceability.md) for full coverage.
-
 ---
 
 ## Business Case
@@ -574,8 +558,6 @@ The business case uses a hypothetical monthly volume of 10,000 orders, separate 
 | Simple payback | ₹80,000 ÷ ₹11,000 monthly net benefit | 7.3 months |
 
 At 100 prevented cancellations per month, the first-year ROI falls to approximately **−31.4%**. The case therefore depends on achievable cancellation reduction, contribution, and avoidable operating costs.
-
-See [Business Case and Rollout](docs/09-business-case-and-rollout.md).
 
 ---
 
